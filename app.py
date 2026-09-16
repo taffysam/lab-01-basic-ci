@@ -7,7 +7,7 @@ def calculate_shipping(weight, express=False):
         cost = 150
 
     if express:
-        cost += 75
+        cost += 90
 
     return cost
 
