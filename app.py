@@ -1,12 +1,19 @@
-def calculate_shipping(weight):
+def calculate_shipping(weight, express=False):
     if weight <= 5:
-        return 50
+        cost = 50
     elif weight <= 10:
-        return 100
+        cost = 100
     else:
-        return 150
+        cost = 150
+
+    if express:
+        cost += 75
+
+    return cost
 
 
 if __name__ == "__main__":
     print("Shipping Calculator")
     print(calculate_shipping(7))
+
+
