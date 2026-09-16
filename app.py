@@ -2,7 +2,7 @@ def calculate_shipping(weight):
     if weight <= 5:
         return 50
     elif weight <= 10:
-        return 120
+        return 100
     else:
         return 150
 
